@@ -1,5 +1,5 @@
 <script>
-import HeroSection from './HeroSection.vue';
+// import HeroSection from './HeroSection.vue';
 import SecondSection from './SecondSection.vue';
 import ThirdSection from './ThirdSection.vue';
 import FourthSection from './FourthSection.vue';
@@ -10,28 +10,31 @@ import EighthSection from './EighthSection.vue';
 
 export default {
     name: "AppMain",
-    components: { HeroSection, SecondSection, ThirdSection, FourthSection, FifthSection, SixthSection, SeventhSection, EighthSection }
+    components: {
+        // HeroSection,
+        SecondSection, ThirdSection, FourthSection, FifthSection, SixthSection, SeventhSection, EighthSection
+    }
 }
 </script>
 
 <template>
+    <main>
+        <!-- <HeroSection /> -->
 
-    <HeroSection />
+        <SecondSection />
 
-    <SecondSection />
+        <ThirdSection />
 
-    <ThirdSection />
+        <FourthSection />
 
-    <FourthSection />
+        <FifthSection />
 
-    <FifthSection />
+        <SixthSection />
 
-    <SixthSection />
+        <SeventhSection />
 
-    <SeventhSection />
-
-    <EighthSection />
-
+        <EighthSection />
+    </main>
 </template>
 
 <style lang="scss" scoped>
