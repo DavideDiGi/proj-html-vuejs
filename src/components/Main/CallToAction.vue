@@ -6,30 +6,32 @@ export default {
 </script>
 
 <template>
+    <div class="cta-container">
+        <div class="left-hero px-5">
+            <div class="call-to-action">
+                <span class="line">-----</span>
+                <span class="lil-title ms-5">THE BEST TABLE IN TOWN</span>
 
-    <div class="left-hero px-5">
-        <div class="call-to-action">
-            <span class="line">-----</span>
-            <span class="lil-title ms-5">THE BEST TABLE IN TOWN</span>
-
-            <div class="adv">
-                <h1>FINE DINING EXPERIENCE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores odio. Assumenda ratione
-                    ducimus natus.</p>
-                <a href="">EXPLORE THE MENU</a>
+                <div class="adv">
+                    <h1>FINE DINING EXPERIENCE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores odio. Assumenda
+                        ratione
+                        ducimus natus.</p>
+                    <a href="#">EXPLORE THE MENU</a>
+                </div>
             </div>
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
-.left-hero {
+.cta-container {
     width: 40%;
+    padding-bottom: 100px;
+
 
     .call-to-action {
         color: gray;
-        padding-bottom: 100px;
 
         .line {
             margin-left: 20px;

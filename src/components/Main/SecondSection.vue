@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="section-container d-flex flex-wrap">
+    <section class="section-container d-flex flex-wrap">
 
         <div class="left-side w-50 pe-5 pt-5">
 
@@ -87,7 +87,7 @@ export default {
 
         </div>
 
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
