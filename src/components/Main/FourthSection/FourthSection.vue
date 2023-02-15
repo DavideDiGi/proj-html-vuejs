@@ -42,7 +42,7 @@ export default {
     <section class="section-container d-flex flex-wrap">
 
         <div class="title-box">
-            <MainTitle />
+            <MainTitle headingText="What critics are saying about us" />
         </div>
 
         <div class="main-review w-100 bg-black d-flex">

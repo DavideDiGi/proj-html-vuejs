@@ -12,12 +12,10 @@ export default {
     <section>
 
         <div class="title-box pt-5 pb-4 text-center">
-            <MainTitle />
+            <MainTitle headingText="Latest news & promotions" />
         </div>
 
-        <hr>
-
-        <div class="cards-container d-flex pt-5">
+        <div class="cards-container d-flex pt-3">
 
             <div class="left card position-relative">
                 <div class="card-description">
@@ -44,11 +42,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-hr {
-    width: 5%;
-    margin: 0 auto;
-}
-
 .cards-container {
     width: 70%;
     margin: 0 auto;
