@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <CallToAction :lilHeading="calls.lilTitle" :heading="calls.title" :parag="calls.paragraph"
+    <CallToAction class="pt-0" :lilHeading="calls.lilTitle" :heading="calls.title" :parag="calls.paragraph"
         :buttonText="calls.button" />
 </template>
 

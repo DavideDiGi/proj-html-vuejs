@@ -38,6 +38,7 @@ export default {
 .cta-container {
     width: 40%;
     padding-bottom: 100px;
+    padding-top: 150px;
 
     .lil-title {
         width: 75%;
@@ -60,6 +61,7 @@ export default {
         .adv {
 
             h1 {
+                min-width: 120%;
                 color: white;
                 padding-bottom: 20px;
                 font-size: 2.8rem;

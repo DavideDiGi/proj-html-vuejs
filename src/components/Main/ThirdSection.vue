@@ -3,6 +3,16 @@ import CallToAction from './CallToAction.vue';
 
 export default {
     name: "ThirdSection",
+    data() {
+        return {
+            calls: {
+                lilTitle: "FINE DINING EXPERIENCE",
+                title: "THE BEST TABLE IN TOWN",
+                paragraph: "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla.",
+                button: "EXPLORE THE MENU"
+            }
+        }
+    },
     components: { CallToAction }
 }
 </script>
@@ -12,9 +22,8 @@ export default {
     <section class="w-100 bg-black">
 
         <div class="sushi-img"></div>
-        <div class="this-cta-container">
-            <CallToAction />
-        </div>
+        <CallToAction :lilHeading="calls.lilTitle" :heading="calls.title" :parag="calls.paragraph"
+            :buttonText="calls.button" />
     </section>
 
 </template>
@@ -30,15 +39,6 @@ section {
         background-image: url('../../assets/img/slider32x.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .this-cta-container {
-        padding-top: 150px;
-        width: 40%;
-
-        &>:first-child {
-            width: 100%;
-        }
     }
 
 }
