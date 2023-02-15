@@ -2,6 +2,7 @@
 export default {
     name: 'AppReview',
     props: {
+        abalonePrice: String,
         userName: String,
         newsPaperName: String,
         reviewStars: String,
@@ -19,7 +20,10 @@ export default {
 
             <div class="review-content">
                 <div class="user-name pb-3">{{ userName }}</div>
-                <h1>{{ newsPaperName }}</h1>
+                <div class="d-flex">
+                    <h1>{{ newsPaperName }}</h1>
+                    <div class="price mt-3">{{ abalonePrice }}</div>
+                </div>
                 <div class="pb-3">{{ reviewStars }}</div>
                 <hr>
                 <p>{{ firstParag }}</p>
@@ -37,21 +41,28 @@ export default {
     padding-bottom: 120px;
 
     .review {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         color: gray;
 
         .review-content {
+            width: 100%;
 
             .user-name {
                 font-size: 0.8rem;
+            }
+
+            .price {
+                font-size: 0.8rem;
+                height: 20px;
+                margin-left: -50px;
             }
 
             h1 {
                 min-width: 120%;
                 color: white;
                 padding-bottom: 20px;
-                font-size: 2.3rem;
+                font-size: 2rem;
                 line-height: 3.7rem;
             }
 

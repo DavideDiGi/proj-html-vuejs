@@ -1,18 +1,31 @@
 <script>
-import CallToAction from './CallToAction.vue';
+import AppReview from './FourthSection/AppReview.vue';
+
 
 export default {
     name: "LastSection",
-    components: { CallToAction }
+    data() {
+        return {
+            flat:
+            {
+                price: "$52",
+                newsPaper: "BRAISED ABALONE",
+                firstParagraph: "Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.",
+                button: "VIEW IN THE MENU"
+            },
+        }
+    },
+    components: { AppReview }
 }
 </script>
 
 <template>
     <div class="wallpaper-container w-100 bg-info position-relative mt-5">
         <img src="../../assets/img/poke.jpeg" alt="">
-        <div>
-            <CallToAction />
-        </div>
+        <!-- <div>S -->
+        <AppReview :abalonePrice="flat.price" :newsPaperName="flat.newsPaper" :reviewStars="flat.stars"
+            :firstParag="flat.firstParagraph" :secondParag="flat.secondParagraph" :buttonText="flat.button" />
+        <!-- </div> -->
     </div>
 </template>
 
@@ -28,12 +41,18 @@ export default {
     }
 
     div {
-        width: 65%;
+        width: 370px;
         height: 400px;
         background-color: black;
         // font-size: 0.7rem;
         position: absolute;
-        bottom: 0px;
+        left: 200px;
+        bottom: 50px;
+        padding-bottom: 420px;
+
+        &> {
+            width: 100%;
+        }
 
         // left: 50%;
         // transform: translate(-50%);

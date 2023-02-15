@@ -30,6 +30,7 @@ export default {
         <!-- <HeroSection /> -->
 
 
+
         <SecondSection />
 
         <ThirdSection />

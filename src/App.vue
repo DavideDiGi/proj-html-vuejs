@@ -22,7 +22,7 @@ export default {
 
       <AppHeader />
 
-      <HeroSection />
+      <HeroSection class="pt-5" />
 
     </div>
 
@@ -41,7 +41,7 @@ export default {
   background-color: #FFFFFF;
 
   .hero {
-    height: 90%;
+    height: 700px;
     display: flex;
     flex-wrap: wrap;
     background-color: #000000;
