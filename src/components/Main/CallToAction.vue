@@ -7,21 +7,25 @@ export default {
 
 <template>
     <div class="cta-container">
-        <div class="left-hero px-5">
-            <div class="call-to-action">
-                <span class="line">-----</span>
-                <span class="lil-title ms-5">THE BEST TABLE IN TOWN</span>
 
-                <div class="adv">
-                    <h1>FINE DINING EXPERIENCE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores odio. Assumenda
-                        ratione
-                        ducimus natus.</p>
-                    <a href="#">EXPLORE THE MENU</a>
-                </div>
+        <div class="lil-title">
+
+            <span class="line">-----</span>
+            <span class="">THE BEST TABLE IN TOWN</span>
+
+        </div>
+        <div class="call-to-action">
+
+            <div class="adv">
+                <h1>FINE DINING EXPERIENCE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores odio. Assumenda
+                    ratione
+                    ducimus natus.</p>
+                <a href="#">EXPLORE THE MENU</a>
             </div>
         </div>
     </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -29,22 +33,25 @@ export default {
     width: 40%;
     padding-bottom: 100px;
 
+    .lil-title {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        color: lightgray;
+        font-size: 0.7rem;
 
-    .call-to-action {
-        color: gray;
 
         .line {
-            margin-left: 20px;
+            margin-right: 45px;
         }
+    }
 
-        .lil-title {
-            font-size: 0.7rem;
-        }
+    .call-to-action {
+        width: 50%;
+        margin: 0 auto;
+        color: gray;
 
         .adv {
-            width: 56%;
-            margin: 0 auto;
-            margin-top: 35px;
 
             h1 {
                 color: white;
@@ -54,7 +61,7 @@ export default {
             }
 
             p {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
 
             a {
@@ -63,8 +70,8 @@ export default {
                 text-decoration: none;
                 border: 1px solid gray;
                 color: lightgray;
-                padding: 7px 25px;
-                font-size: 0.6rem;
+                padding: 8px 25px;
+                font-size: 0.7rem;
                 margin-top: 20px;
 
                 &:hover {
@@ -75,6 +82,4 @@ export default {
         }
     }
 }
-
-// }
 </style>
