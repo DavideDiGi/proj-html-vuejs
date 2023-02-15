@@ -4,6 +4,16 @@ import MainTitle from './MainTitle.vue';
 
 export default {
     name: "FourthSection",
+    data() {
+        return {
+            calls: {
+                lilTitle: "FINE DINING EXPERIENCE",
+                title: "THE BEST TABLE IN TOWN",
+                paragraph: "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla.",
+                button: "EXPLORE THE MENU"
+            }
+        }
+    },
     components: { CallToAction, MainTitle }
 }
 </script>
@@ -21,7 +31,8 @@ export default {
             <div class="left-side"><img src="../../assets/img/blog72x-1200x1375.jpg" alt=""></div>
 
             <div class="right-side">
-                <CallToAction />
+                <CallToAction class="pt-0" :lilHeading="calls.lilTitle" :heading="calls.title" :parag="calls.paragraph"
+                    :buttonText="calls.button" />
             </div>
 
         </div>
@@ -30,10 +41,12 @@ export default {
 
             <div class="main-review w-100 d-flex justify-content-between">
                 <div class="guardian w-50 me-5 bg-black">
-                    <CallToAction />
+                    <CallToAction class="pt-0" :lilHeading="calls.lilTitle" :heading="calls.title"
+                        :parag="calls.paragraph" :buttonText="calls.button" />
                 </div>
                 <div class="globe w-50 bg-black ">
-                    <CallToAction />
+                    <CallToAction class="pt-0" :lilHeading="calls.lilTitle" :heading="calls.title"
+                        :parag="calls.paragraph" :buttonText="calls.button" />
                 </div>
             </div>
         </div>
