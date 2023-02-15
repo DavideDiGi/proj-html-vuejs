@@ -2,7 +2,7 @@
 // import HeroSection from './HeroSection.vue';
 import SecondSection from './SecondSection.vue';
 import ThirdSection from './ThirdSection.vue';
-import FourthSection from './FourthSection.vue';
+import FourthSection from './FourthSection/FourthSection.vue';
 import FifthSection from './FifthSection.vue';
 import SixthSection from './SixthSection.vue';
 import SeventhSection from './SeventhSection.vue';

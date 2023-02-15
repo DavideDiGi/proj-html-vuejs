@@ -1,29 +1,29 @@
 <script>
 export default {
-    name: 'CallToAction',
+    name: 'AppReview',
     props: {
-        lilHeading: String,
-        heading: String,
-        parag: String,
+        userName: String,
+        newsPaperName: String,
+        reviewStars: String,
+        firstParag: String,
+        secondParag: String,
         buttonText: String
     }
 }
 </script>
 
 <template>
-    <div class="cta-container">
+    <div class="review-container">
 
-        <div class="lil-title">
+        <div class="review">
 
-            <span class="line">-----</span>
-            <span class="">{{ lilHeading }}</span>
-
-        </div>
-        <div class="call-to-action">
-
-            <div class="adv">
-                <h1>{{ heading }}</h1>
-                <p>{{ parag }}</p>
+            <div class="review-content">
+                <div class="user-name pb-3">{{ userName }}</div>
+                <h1>{{ newsPaperName }}</h1>
+                <div class="pb-3">{{ reviewStars }}</div>
+                <hr>
+                <p>{{ firstParag }}</p>
+                <p>{{ secondParag }}</p>
                 <a href="#">{{ buttonText }}</a>
             </div>
         </div>
@@ -32,37 +32,33 @@ export default {
 </template>
 
 <style lang="scss">
-.cta-container {
+.review-container {
     width: 40%;
-    padding-bottom: 100px;
-    padding-top: 150px;
+    padding-bottom: 120px;
 
-    .lil-title {
-        width: 75%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        color: lightgray;
-        font-size: 0.7rem;
-
-
-        .line {
-            margin-right: 45px;
-        }
-    }
-
-    .call-to-action {
+    .review {
         width: 50%;
         margin: 0 auto;
         color: gray;
 
-        .adv {
+        .review-content {
+
+            .user-name {
+                font-size: 0.8rem;
+            }
 
             h1 {
                 min-width: 120%;
                 color: white;
                 padding-bottom: 20px;
-                font-size: 2.8rem;
+                font-size: 2.3rem;
                 line-height: 3.7rem;
+            }
+
+            hr {
+                width: 18%;
+                height: 20px;
+                color: white;
             }
 
             p {
