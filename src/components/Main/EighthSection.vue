@@ -59,7 +59,7 @@ section {
     .page {
         max-height: 95%;
         width: calc(100% / 3);
-        background-color: lightgray;
+        background-color: #E8E8E8;
         padding: 50px;
         align-self: flex-end;
     }
