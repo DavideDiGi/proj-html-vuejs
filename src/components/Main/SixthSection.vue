@@ -60,6 +60,8 @@ hr {
         background-size: cover;
         border: none;
         border-radius: 0;
+        margin-bottom: 130px;
+
 
         .card-description {
             padding-top: 20px;
