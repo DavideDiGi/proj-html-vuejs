@@ -21,6 +21,7 @@ export default {
     <main>
         <!-- <HeroSection /> -->
 
+
         <SecondSection />
 
         <ThirdSection />
