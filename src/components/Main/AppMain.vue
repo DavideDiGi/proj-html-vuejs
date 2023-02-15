@@ -1,5 +1,4 @@
 <script>
-// import HeroSection from './HeroSection.vue';
 import SecondSection from './SecondSection.vue';
 import ThirdSection from './ThirdSection.vue';
 import FourthSection from './FourthSection/FourthSection.vue';
@@ -12,7 +11,6 @@ import LastSection from './LastSection.vue';
 export default {
     name: "AppMain",
     components: {
-        // HeroSection,
         SecondSection,
         ThirdSection,
         FourthSection,
@@ -27,9 +25,6 @@ export default {
 
 <template>
     <main>
-        <!-- <HeroSection /> -->
-
-
 
         <SecondSection />
 
@@ -46,6 +41,7 @@ export default {
         <EighthSection />
 
         <LastSection />
+
     </main>
 </template>
 

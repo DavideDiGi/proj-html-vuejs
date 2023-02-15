@@ -47,6 +47,12 @@ ul {
     padding: 0;
     width: 75%;
     margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 0.9rem;
 
     .link-box {
         width: 40px;
