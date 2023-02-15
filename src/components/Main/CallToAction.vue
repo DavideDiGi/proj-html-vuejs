@@ -1,7 +1,15 @@
 <script>
+import { stringifyExpression } from '@vue/compiler-core';
+
 
 export default {
     name: 'CallToAction',
+    props: {
+        lilHeading: String,
+        heading: String,
+        parag: String,
+        buttonText: String
+    }
 }
 </script>
 
@@ -11,24 +19,22 @@ export default {
         <div class="lil-title">
 
             <span class="line">-----</span>
-            <span class="">THE BEST TABLE IN TOWN</span>
+            <span class="">{{ lilHeading }}</span>
 
         </div>
         <div class="call-to-action">
 
             <div class="adv">
-                <h1>FINE DINING EXPERIENCE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores odio. Assumenda
-                    ratione
-                    ducimus natus.</p>
-                <a href="#">EXPLORE THE MENU</a>
+                <h1>{{ heading }}</h1>
+                <p>{{ parag }}</p>
+                <a href="#">{{ buttonText }}</a>
             </div>
         </div>
     </div>
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .cta-container {
     width: 40%;
     padding-bottom: 100px;
