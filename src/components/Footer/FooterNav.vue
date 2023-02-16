@@ -1,51 +1,22 @@
 <script>
-// import MyComponent from './MyComponent.vue';
 
 export default {
     name: "FooterNav",
     props: {
         socialMedia: String
     },
-    // components: { MyComponent }
 }
 </script>
 
 <template>
 
-    <!-- <ul> -->
 
     <li>
         <a href="#">
-            <div class="link-box">{{ socialMedia }}</div>
+            <div class="link-box"> {{ socialMedia }}</div>
+            <!-- <font-awesome-icon icon="fa-brands fa-twitter" /> -->
         </a>
     </li>
-    <!-- <MyComponent /> -->
-
-    <!-- <li>
-            <a href="#">
-                <div class="link-box">T</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <div class="link-box">Y</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <div class="link-box">I</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <div class="link-box">L</div>
-            </a>
-        </li> -->
-
-    <!-- </ul> -->
 
 </template>
 

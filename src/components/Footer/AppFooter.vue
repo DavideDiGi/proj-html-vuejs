@@ -1,11 +1,7 @@
 <script>
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import AppLogo from '../Header/AppLogo.vue';
 import AppCopyright from './AppCopyright.vue';
 import FooterNav from './FooterNav.vue';
-
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-// import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default {
     name: 'AppFooter',
@@ -13,20 +9,19 @@ export default {
         return {
             socials: [
                 {
-                    name: "├"
-                    // isActive: "true"
+                    name: 'F',
                 },
                 {
-                    name: "🐤",
+                    name: "T",
                 },
                 {
-                    name: "►",
+                    name: "Y",
                 },
                 {
-                    name: "📸",
+                    name: "I",
                 },
                 {
-                    name: "⍸",
+                    name: "L",
                 }
             ]
         }
@@ -35,7 +30,6 @@ export default {
         AppCopyright,
         FooterNav,
         AppLogo,
-        // FontAwesomeIcon
     }
 }
 </script>
@@ -59,7 +53,6 @@ export default {
             <nav>
                 <ul>
                     <FooterNav :socialMedia="socials[index].name" v-for="(social, index) in socials" />
-                    <!-- <font-awesome-icon :icon="name" /> -->
                 </ul>
             </nav>
 

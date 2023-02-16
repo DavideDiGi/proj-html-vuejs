@@ -13,10 +13,10 @@ export default {
 <template>
     <div class="cta-container">
 
-        <div class="lil-title">
+        <div class="lil-title d-flex">
 
-            <span class="line">-----</span>
-            <span class="">{{ lilHeading }}</span>
+            <hr>
+            <span>{{ lilHeading }}</span>
 
         </div>
         <div class="call-to-action">
@@ -43,10 +43,12 @@ export default {
         margin-bottom: 30px;
         color: lightgray;
         font-size: 0.7rem;
+        align-items: center;
 
 
-        .line {
-            margin-right: 45px;
+        hr {
+            width: 40px;
+            margin-right: 30px;
         }
     }
 

@@ -145,10 +145,14 @@ export default {
             .link-btn {
                 color: black;
                 text-decoration: none;
-                border: 1px solid black;
+                border: 1px solid lightgray;
                 padding: 7px 20px;
                 font-size: 0.7rem;
                 margin-top: 5px;
+
+                &:hover {
+                    border-color: black;
+                }
             }
         }
 

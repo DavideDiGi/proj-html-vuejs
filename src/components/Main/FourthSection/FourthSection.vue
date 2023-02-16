@@ -11,7 +11,6 @@ export default {
                 {
                     name: "MEGGY STEWART",
                     newsPaper: "NEW YORK TIMES",
-                    stars: "hi",
                     firstParagraph: "Non arcu mauris tortor utltrices mollis tellus euismod fementum. Habitant amet tincidunt id sapien accumsan sed at.",
                     secondParagraph: "Mmalesuada ullamcorper amet. Pretium pretium dignissim nisi",
                     button: "READ FULL ARTICLE"
@@ -19,14 +18,12 @@ export default {
                 {
                     name: "MARY MAXEY",
                     newsPaper: "THE GUARDIAN",
-                    stars: "hello",
                     firstParagraph: "Non arcu mauris tortor utltrices mollis tellus euismod fementum. Habitant amet tincidunt id sapien accumsan sed",
                     button: "READ FULL ARTICLE"
                 },
                 {
                     name: "PATRICK MONROE",
                     newsPaper: "GLOBE AND MAIL",
-                    stars: "bonjour",
                     firstParagraph: "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.",
                     button: "READ FULL ARTICLE"
                 }
@@ -50,9 +47,10 @@ export default {
             <div class="left-side"><img src="../../../assets/img/blog72x-1200x1375.jpg" alt=""></div>
 
             <div class="right-side">
+                <!-- <font-awesome-icon icon="fa-brands fa-twitter" /> -->
                 <AppReview :userName="rieviews[0].name" :newsPaperName="rieviews[0].newsPaper"
-                    :reviewStars="rieviews[0].stars" :firstParag="rieviews[0].firstParagraph"
-                    :secondParag="rieviews[0].secondParagraph" :buttonText="rieviews[0].button" />
+                    :firstParag="rieviews[0].firstParagraph" :secondParag="rieviews[0].secondParagraph"
+                    :buttonText="rieviews[0].button" />
             </div>
 
         </div>

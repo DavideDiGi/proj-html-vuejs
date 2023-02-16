@@ -5,7 +5,6 @@ export default {
         abalonePrice: String,
         userName: String,
         newsPaperName: String,
-        reviewStars: String,
         firstParag: String,
         secondParag: String,
         buttonText: String
@@ -24,7 +23,8 @@ export default {
                     <h1>{{ newsPaperName }}</h1>
                     <div class="price mt-3">{{ abalonePrice }}</div>
                 </div>
-                <div class="pb-3">{{ reviewStars }}</div>
+                <span class="pb-3 stars" v-for="star in 5"><font-awesome-icon icon="fa-solid fa-star" />
+                </span>
                 <hr>
                 <p>{{ firstParag }}</p>
                 <p>{{ secondParag }}</p>
@@ -64,6 +64,11 @@ export default {
                 padding-bottom: 20px;
                 font-size: 2rem;
                 line-height: 3.7rem;
+            }
+
+            .stars {
+                margin-right: 5px;
+                color: white;
             }
 
             hr {
