@@ -1,14 +1,41 @@
 <script>
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import AppLogo from '../Header/AppLogo.vue';
 import AppCopyright from './AppCopyright.vue';
 import FooterNav from './FooterNav.vue';
 
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 export default {
     name: 'AppFooter',
+    data() {
+        return {
+            socials: [
+                {
+                    name: "├"
+                    // isActive: "true"
+                },
+                {
+                    name: "🐤",
+                },
+                {
+                    name: "►",
+                },
+                {
+                    name: "📸",
+                },
+                {
+                    name: "⍸",
+                }
+            ]
+        }
+    },
     components: {
         AppCopyright,
         FooterNav,
-        AppLogo
+        AppLogo,
+        // FontAwesomeIcon
     }
 }
 </script>
@@ -30,7 +57,10 @@ export default {
             </p>
 
             <nav>
-                <FooterNav />
+                <ul>
+                    <FooterNav :socialMedia="socials[index].name" v-for="(social, index) in socials" />
+                    <!-- <font-awesome-icon :icon="name" /> -->
+                </ul>
             </nav>
 
         </div>
@@ -76,6 +106,18 @@ footer {
             width: 60%;
             height: 50px;
             margin: 0 auto;
+
+            ul {
+                padding: 0;
+                width: 75%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+                font-size: 0.9rem;
+            }
         }
     }
 }

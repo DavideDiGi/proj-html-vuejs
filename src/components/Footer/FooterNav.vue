@@ -1,20 +1,27 @@
 <script>
+// import MyComponent from './MyComponent.vue';
+
 export default {
-    name: 'FooterNav',
+    name: "FooterNav",
+    props: {
+        socialMedia: String
+    },
+    // components: { MyComponent }
 }
 </script>
 
 <template>
 
-    <ul>
+    <!-- <ul> -->
 
-        <li>
-            <a class="active" href="#">
-                <div class="link-box">F</div>
-            </a>
-        </li>
+    <li>
+        <a href="#">
+            <div class="link-box">{{ socialMedia }}</div>
+        </a>
+    </li>
+    <!-- <MyComponent /> -->
 
-        <li>
+    <!-- <li>
             <a href="#">
                 <div class="link-box">T</div>
             </a>
@@ -36,33 +43,21 @@ export default {
             <a href="#">
                 <div class="link-box">L</div>
             </a>
-        </li>
+        </li> -->
 
-    </ul>
+    <!-- </ul> -->
 
 </template>
 
 <style lang="scss" scoped>
-ul {
-    padding: 0;
-    width: 75%;
-    margin: 0 auto;
-    height: 100%;
+.link-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    font-size: 0.9rem;
-
-    .link-box {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-    }
+    background-color: white;
+    color: black;
 }
 </style>
